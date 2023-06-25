@@ -1,16 +1,26 @@
-#ifndef SIDE_H
-#define SIDE_H
+#ifndef COLOR_H
+#define COLOR_H
 #include <limits.h>
 
-enum Side { WHITE, BLACK };
-const int NSIDES = 2;
 const int NROWS = 8;
 const int NCOLS = 8;
 const int INF = INT_MAX;
 const int NEG_INF = INT_MIN;
 
+enum Color { WHITE, BLACK };
+
 inline
-Side opponent(Side s) { return Side(NSIDES - 1 - s); }
+Color opponent(Color c) { return Color(1 - c); }
+
+
+
+
+
+
+
+
+
+
 
 #include <chrono>
 class Timer {
