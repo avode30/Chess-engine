@@ -13,7 +13,7 @@ class Board {
      // function overload
 
   private:
-    int board[8][8];
+    int board[12][10];
 };
 
 #endif
